@@ -1,0 +1,21 @@
+.navbar{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.navbar li{
+    display: inline-block;
+    font-size: 15px;
+}
+
+.navbar li a{
+    color: gold;
+    text-decoration: none;
+    padding: 30px 30px;
+}
+
+.navbar li a:hover,
+
+body{
+    font-family: 'Helvicta Neue';
+}
