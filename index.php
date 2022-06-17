@@ -9,17 +9,20 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 </head>
-<body>
-    <?php include 'navbar.php' ?>
-    <h3 align='center'>Welcome to</h3>
-    <h1 align='center'>Bank Of Yash</h1>
+<body style="background-image: url('rupee.png');  background-repeat: no-repeat; background-size: auto; ";>
 
-   <section align='center'>
-       <div>
-            <form action="retrive.php" method='POST'>
-                <input type="submit" value='View All Customers'>
-            </form>
-       </div>
-   </section>
+    <?php include 'navbar.php' ?>
+    <div style="padding-top:100px">
+        <h3 align='center' class="display-3 font-weight-normal text-warning">Welcome To</h3>
+        <h1 align='center' class="display-1 font-weight-normal text-warning">Bank Of Yash</h1>
+
+        <section align='center'>
+            <div>
+                <form action="retrive.php" method='POST' class='text-center'>
+                <input type="submit" class='btn btn-warning my-1 mt-3' value='View All Customers'>
+                </form>
+            </div>
+        </section>
+    </div>
 </body>
 </html>

@@ -15,15 +15,14 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-<body>
-    
-    <?php include "navbar.php"; ?>
-    <h3 align='center'>Cutsomer Details:</h3>
+<body style="background-image: url('rupee.png');  background-repeat: no-repeat; background-size: auto; font-size:20px; " >
+    <?php include 'navbar.php'; ?>
+    <h2 align='center' class='display-4' style='padding-top:25px; padding-bottom:25px; color:white;'>Cutsomer Details:</h2>
     <br>
-    <table class='table table-hover table-striped table-light'  align='center' >
+    <table class='table table-hover' align='center' >
         <thead align='center'> 
             
-            <tr class='table1'>
+            <tr style="color:white" class='display-10'>
                 <th>ID</th>
                 <th>NAME</th>
                 <th>EMAIL</th>
@@ -33,14 +32,14 @@
         </thead>
         <tbody >
            <?php while($res = $result->fetch_assoc()){ ?>
-                <tr class ='text-secondary'>
+                <tr align='center' style="color:white" >
                     <form action="transfer.php" method='get'>
                     <input type='hidden' name='id' value="<?php echo $res['id']; ?>">
-                    <td><?php echo $res['id']; ?></td>
-                    <td><?php echo $res['name']; ?></td>
-                    <td><?php echo $res['email']; ?></td>
+                    <td ><?php echo $res['id']; ?></td>
+                    <td ><?php echo $res['name']; ?></td>
+                    <td ><?php echo $res['email']; ?></td>
                     <td><?php echo $res['balance']; ?></td>
-                    <td><input type='submit' value='Transfer' name='choice' class='btn btn-info'></td>
+                    <td><input class='btn btn-warning my-1 mt-3' type='submit' value='Transfer' name='choice' class='btn btn-info'></td>
                     </form>
                 </tr>
             <?php } ?>
