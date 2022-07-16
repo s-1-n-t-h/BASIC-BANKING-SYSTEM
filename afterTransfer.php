@@ -10,7 +10,7 @@
 <body align='center' style="background-image: url('rupee.png');  background-repeat: no-repeat; background-size: auto; ">
     <?php
 
-        $con = mysqli_connect('localhost','id19087954_saiyaswanth','OLHffwS5<9>!ff04','id19087954_bank_of_yash');
+        $con = mysqli_connect('localhost','','','');
         $rid = $_GET['reciverID'];
         $sid = $_GET['senderID'];
         $amount = $_GET['amount'];
